@@ -1,128 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Websites</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kajalti Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">MyPortfolio</div>
-            <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+<nav>
+    <div class="logo">Kajalati</div>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <img src="Images/kajalati.png" alt="Kajalti Sirame" class="hero-photo">
-            <h1>Hello, I'm Kajalati Sirame</h1>
-            <p>Frontend Developer | Passionate About Interactive Web Design</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="Images/kajalati.png" alt="Kajalti Sirame" class="about-photo">
-            <p>
-                Hi! I'm Kajalti Sirame, an aspiring Frontend Developer passionate about creating interactive and user-friendly websites. I am currently learning HTML, CSS, and JavaScript, and I enjoy turning ideas into clean, responsive digital experiences. My goal is to grow as a frontend developer, contribute to real-world projects, and bring creativity and problem-solving skills to a dynamic team.
-            </p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill"><i class="fab fa-html5"></i> HTML</div>
-            <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
-            <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
-            <div class="skill"><i class="fas fa-code"></i>React(Basic)</div>
-            <div class="skill"><i class="fab fa-python"></i>Tailwind(Basic)</div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-
-    <!-- 1. Notebook App (React) -->
-    <div class="project-card">
-        <img src="Images/notebook.png" alt="Notebook App">
-        <h3>Notebook App (React)</h3>
-        <p>
-            A note-taking web application built using React. Users can add, edit,
-            and delete notes. It uses component-based architecture and provides a clean UI.
-        </p>
-        <a href="https://github.com/your-username/notebook-app" target="_blank" class="btn">
-            View Code
-        </a>
+    <div class="hamburger">
+        <i class="fas fa-bars"></i>
     </div>
+</nav>
+</header>
 
-    <!-- 2. Weather App -->
-    <div class="project-card">
-        <img src="Images/weather.png" alt="Weather App">
-        <h3>Weather App</h3>
-        <p>
-            A weather application that fetches real-time data using OpenWeather API.
-            It displays temperature, weather conditions, humidity, and dynamic icons.
-        </p>
-        <a href="https://github.com/your-username/weather-app" target="_blank" class="btn">
-            View Code
-        </a>
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-content">
+        <img src="Images/kajalati.png" class="hero-img">
+        <h1>Hello, I'm Kajalati Sirame</h1>
+        <p>Frontend Developer | React Learner</p>
+        <a href="#projects" class="btn">View My Work</a>
     </div>
+</section>
 
-    <!-- 3. Password Generator -->
-    <div class="project-card">
-        <img src="Images/password.png" alt="Password Generator">
-        <h3>Password Generator</h3>
-        <p>
-            A JavaScript-based tool to generate strong passwords with options like
-            uppercase, lowercase, numbers, and symbols. Includes copy and strength feature.
-        </p>
-        <a href="https://github.com/your-username/password-generator" target="_blank" class="btn">
-            View Code
-        </a>
-</div>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Frontend Developer skilled in HTML, CSS, JavaScript, and React. 
+        I enjoy building responsive and user-friendly websites.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+        <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill"><i class="fab fa-react"></i> React(Basic)</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Notebook App</h3>
+            <p>React based note-taking app</p>
+            <a href="https://kajalti29.github.io/notebook-app/" target="_blank" class="btn">Live Demo</a>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>API based weather app</p>
+            <a href="https://kajalti29.github.io/weather-app/" target="_blank" class="btn">Live Demo</a>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Kajalati Sirame. All Rights Reserved.</p>
-        <p><samp>Made By Me &hearts;</samp></p>
-    </footer>
+        <div class="project-card">
+            <h3>Password Generator</h3>
+            <p>Strong password generator</p>
+            <a href="https://kajalti29.github.io/password-generator/" target="_blank" class="btn">Live Demo</a>
+        </div>
 
-    <script src="script.js"></script>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>Email: kajaltisirame@gmail.com</p>
+    <p>Phone: 7805864536</p>
+
+    <div class="social-links">
+        <a href="https://github.com/kajalti29" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Kajalati Sirame | Made by me</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
